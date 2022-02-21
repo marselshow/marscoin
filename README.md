@@ -24,3 +24,4 @@ The Mars-Coin websites are distributed under the MIT License. See the `LICENSE` 
 <hr>
 
 Website Link: [https://marscoin.marselshow.repl.co/](https://marscoin.marselshow.repl.co/)
+Скочать: [https://github.com/marselshow/marscoin-app/releases/tag/lox](СКОЧАТЬ КЛИЭНТ ДЛЯ МАЙНИНГА БЛЭТ)
