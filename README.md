@@ -14,7 +14,7 @@
 
 ## Source of the online wallet and miner
 
-This repository contains the code for the **fully static** Duino-Coin websites located at [https://wallet.duinocoin.com](https://wallet.duinocoin.com).
+This repository contains the code for the **fully static** Mars-Coin websites located at [https://marscoin.marselshow.repl.co/](https://marscoin.marselshow.repl.co/).
 
 
 ## License
