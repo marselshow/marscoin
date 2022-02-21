@@ -4,12 +4,12 @@
 -->
 
 <a href="https://marscoin.marselshow.repl.co/">
-  <img src="https://github.com/revoxhere/duino-coin/blob/master/Resources/duco-alt.png?raw=true" width="215px" align="right"/>
+  <img src="https://servermarscoin.marselshow.repl.co/mars-alt.png" width="215px" align="right"/>
 </a>
 
 
 <a href="https://marscoin.marselshow.repl.co/">
-  <img src="https://github.com/revoxhere/duino-coin/blob/master/Resources/ducobanner.png?raw=true" width="430px"/>
+  <img src="https://servermarscoin.marselshow.repl.co/marsbanner.png" width="430px"/>
 </a>
 
 ## Source of the online wallet and miner
