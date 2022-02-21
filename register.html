@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://marscoin.marselshow.repl.co/assets/duco.svg">
+    <link rel="shortcut icon" href="https://marscoin.marselshow.repl.co/assets/duco.svg">
+    <title>Mars-Coin | Web Wallet</title>
+    <meta name="apple-mobile-web-app-title" content="Mars-Coin | Web Wallet">
+    <meta name="application-name" content="Mars-Coin | Web Wallet">
+    <meta name="twitter:title" content="Mars-Coin | Web Wallet">
+    <meta property="og:title" content="Mars-Coin | Web Wallet">
+    <meta name="description" content="Official online wallet for Mars-Coin (MARS)">
+    <meta name="twitter:description" content="Official online wallet for Mars-Coin (MARS)">
+    <meta property="og:description" content="Official online wallet for Mars-Coin (MARS)">
+    <meta name="keywords" content="Mars-Coin, duco, Duino Coin, DUCO">
+    <meta name="author" content="revox from the Mars-Coin Team">
+    <meta property="og:url" content="https://marscoin.marselshow.repl.co">
+    <meta name="msapplication-TileColor" content="#f0932b">
+    <meta name="theme-color" content="#f0932b">
+    <meta name="twitter:site" content="@DuinoCoin">
+    <meta name="twitter:image" content="https://marscoin.marselshow.repl.co/img/banner_wallet.png">
+    <meta property="og:image" content="https://marscoin.marselshow.repl.co/img/banner_wallet.png">
+    <meta property="og:image:url" content="https://marscoin.marselshow.repl.co/img/banner_wallet.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Bulma -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preload" href="css/bulma.min.css" as="style">
+    <link rel="stylesheet" href="css/bulma.min.css" type="text/css">
+    <link rel="preload" href="css/bulma-prefers-dark.min.css" as="style">
+    <link rel="stylesheet" href="css/bulma-prefers-dark.min.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css">
+    <!-- Preload Background Images -->
+    <link rel="preload" as="image" href="img/yenn-sea-1.jpg">
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <style>
+        #background {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-position: 50% 50%;
+            background-image: url("img/1.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <div id="background"></div>
+    <section class="hero is-fullheight">
+        <div class="hero-body is-align-self-center">
+            <div class="container" style="max-width:30em">
+                <div class="box blur register-form">
+                    <p class="title is-size-5 mb-0 has-text-centered">
+                        <span class="icon-text">
+                            <span class="icon">
+                                <img id="ducologo" src="https://marscoin.marselshow.repl.co/assets/duco.svg">
+                            </span>
+                            <span>
+                                <span class="has-text-weight-bold">
+                                    Mars-Coin
+                                </span>
+                                <span class="has-text-weight-light">
+                                    Web Wallet
+                                </span>
+                            </span>
+                        </span>
+                    </p>
+                    <br>
+                    <p class="title is-size-3 mb-5 has-text-weight-normal has-text-centered">
+                        <span class="has-text-weight-bold">
+                            Ебнуть
+                        </span> Новый кошелек
+                    </p>
+                    <div class="field mt-5">
+                        <label for="" class="label">Черкни сюда свою Кликуху</label>
+                        <div id="usernameInput" class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" id="username" type="text" placeholder="yana_solyah2004">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <small class="has-text-danger"></small>
+                            </p>
+                        </div>
+                        <p class="subtitle is-size-6 has-text-info">
+                            <i class="fa fa-info-circle"></i>
+                            убери всякую херню и подумай снова
+                        </p>
+                    </div>
+                    <div class="field">
+                        <label for="" class="label">Парольчик нахуй</label>
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" id="password" type="password" placeholder="tvoyamamasluha123!">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                                <small class="has-text-danger"></small>
+                            </p>
+                        </div>
+                        <p class="subtitle is-size-6 has-text-info">
+                            <i class="fa fa-info-circle"></i>
+                            пароль не надежный
+                        </p>
+                    </div>
+                    <div class="field">
+                        <label for="" class="label">патверди шлюха</label>
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" id="passwordconfirm" type="password" placeholder="tvoyamamasluha123!">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                                <small class="has-text-danger"></small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="" class="label">пошта</label>
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" id="email" type="email" placeholder="yaebalmatvladaA4blyat@gmail.com">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-at"></i>
+                                </span>
+                                <small class="has-text-danger"></small>
+                            </p>
+                        </div>
+                        <p class="subtitle is-size-6 has-text-info">
+                            <i class="fa fa-info-circle"></i>
+                            Пж добавь @ в почту иначе ты лох
+                        </p>
+                    </div>
+                    <div class="field">
+                        <div class="h-captcha" data-theme="dark" data-sitekey="1c77cf53-13bc-46a2-b358-84c6766be2bc"></div>
+                        <small id="captchainfo" class="has-text-danger"></small>
+                    </div>
+                    <div class="field">
+                        <p class="subtitle is-size-6 has-text-danger">
+                            <i class="fa fa-exclamation-triangle"></i>
+                            Я ебал тебя
+                            <a href="https://github.com/marselshow">
+                                <b>Mars-Coin ебет тваю мать</b>
+                            </a>
+                        </p>
+                        <div id="loginInput" class="buttons">
+                            <button class="button is-warning is-duco register is-fullwidth">
+                                <span id="logincheck">
+                                    <i class="fa fa-fw fa-check" id="logincheck"></i>
+                                </span>
+                                <span id="loginload" style="display:none">
+                                    <i class="fas fa-cog fa-spin"></i>
+                                </span>
+                                &nbsp;
+                                <span id="logintext">
+                                    Ебнуть новый кошелек
+                                </span>
+                            </button>
+                            <a href="index.html" class="button is-fullwidth">
+                                <i class="fa fa-sign-in-alt fa-fw"></i>&nbsp;
+                                Вирнуца к логину
+                            </a>
+                        </div>
+                        <p class="subtitle is-size-7 has-text-grey-dark mt-5" id="copyright">
+                            <b>Official</b> Mars-Coin Web Wallet ©
+                            <a href="https://vk.com/marselshowyoutube">marselshow</a> &middot;
+                            &middot;
+                            <a href="https://opensource.org/licenses/MIT">
+                                <b>MIT</b> licensed
+                            </a>
+                            <br>Мы кароче <b>open source</b>. ты можеш чекнуть тут
+                            <a href="https://github.com/marselshow">
+                                ебать
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="modal_error" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head has-background-danger">
+                <p class="modal-card-title"><b style="color: white">Ашибка</b></p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="content">
+                    <p></p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="modal_success" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head has-background-success">
+                <p class="modal-card-title"><b style="color: white">Ахуеть все палучилась</b></p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="content">
+                    <p></p>
+                </div>
+                <a class="button" href="https://marscoin.marselshow.repl.co/">прадолжить секс</a>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+// Disabled page-loader
+/*let pageloader = document.getElementById("pageloader"); // PAGE LOAGER
+pageloader.setAttribute('class', "pageloader is-active is-primary is-top-to-bottom"); // Before page is loaded
+window.addEventListener('load', function() {
+    pageloader.setAttribute('class', "pageloader is-primary is-top-to-bottom"); // After page is loaded а еще ты шлюха ебливая
+});*/
+
+</script>
+<link rel="preload" as="script" href="js/register.js">
+<script type="text/javascript" src="js/register.js"></script>
+
